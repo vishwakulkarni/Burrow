@@ -117,6 +117,25 @@
   version = "v1.9.1"
 
 [[projects]]
+  digest = "1:8e7958b1645da0f0b5f669e152cb8f3a73466cada738255a604b7ea4ea1f105a"
+  name = "github.com/linkedin/Burrow"
+  packages = [
+    "core",
+    "core/internal/cluster",
+    "core/internal/consumer",
+    "core/internal/evaluator",
+    "core/internal/helpers",
+    "core/internal/httpserver",
+    "core/internal/notifier",
+    "core/internal/storage",
+    "core/internal/zookeeper",
+    "core/protocol",
+  ]
+  pruneopts = ""
+  revision = "8403e4299c0af1d5be66404955303936014e9cda"
+  version = "v1.2.2"
+
+[[projects]]
   digest = "1:961dc3b1d11f969370533390fdf203813162980c858e1dabe827b60940c909a5"
   name = "github.com/magiconair/properties"
   packages = ["."]
@@ -339,6 +358,16 @@
     "github.com/Shopify/sarama",
     "github.com/julienschmidt/httprouter",
     "github.com/karrick/goswarm",
+    "github.com/linkedin/Burrow/core",
+    "github.com/linkedin/Burrow/core/internal/cluster",
+    "github.com/linkedin/Burrow/core/internal/consumer",
+    "github.com/linkedin/Burrow/core/internal/evaluator",
+    "github.com/linkedin/Burrow/core/internal/helpers",
+    "github.com/linkedin/Burrow/core/internal/httpserver",
+    "github.com/linkedin/Burrow/core/internal/notifier",
+    "github.com/linkedin/Burrow/core/internal/storage",
+    "github.com/linkedin/Burrow/core/internal/zookeeper",
+    "github.com/linkedin/Burrow/core/protocol",
     "github.com/pborman/uuid",
     "github.com/samuel/go-zookeeper/zk",
     "github.com/spf13/viper",
