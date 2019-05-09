@@ -1,0 +1,9 @@
+ ---
+applications:
+- name: go-burrow
+  instances: 1
+  memory: 64MB
+  host: go-burrow
+  buildpack: https://github.com/cloudfoundry/go-buildpack.git
+  env:
+    GOPACKAGENAME : go-burrow
