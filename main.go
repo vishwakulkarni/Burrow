@@ -81,7 +81,7 @@ func handleExit() {
 func main() {
 	// This makes sure that we panic and run defers correctly
 	defer handleExit()
-	port := os.Getenv("PORT")
+	/*port := os.Getenv("PORT")
 	if len(port) < 1 {
 		port = "8080"
 	}
@@ -91,7 +91,7 @@ func main() {
 	http.ListenAndServe(":"+port, nil)
 	for true {
 		time.Sleep(100)
-	}
+	}*/
 
 	runtime.GOMAXPROCS(runtime.NumCPU())
 

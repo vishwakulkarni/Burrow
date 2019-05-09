@@ -18,5 +18,5 @@ WORKDIR /app
 COPY --from=builder /tmp/burrow /app/
 ADD /kafka-config/burrow.toml /etc/burrow/
 
-#CMD ["/app/burrow", "--config-dir", "/etc/burrow"]
-CMD ["burrow"]
+CMD ["/app/burrow", "--config-dir", "/etc/burrow"]
+#CMD ["burrow"]

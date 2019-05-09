@@ -128,3 +128,20 @@
 {"level":"info","ts":1557377552.495868,"msg":"Failed to connect to 10.254.20.12:2181: dial tcp 10.254.20.12:2181: i/o timeout","type":"coordinator","name":"zookeeper"}
 {"level":"info","ts":1557377553.4989839,"msg":"Failed to connect to 10.254.20.10:2181: dial tcp 10.254.20.10:2181: i/o timeout","type":"coordinator","name":"zookeeper"}
 {"level":"error","ts":1557377553.4991748,"msg":"cannot create root path","type":"coordinator","name":"zookeeper","error":"zk: could not connect to a server"}
+{"level":"info","ts":1557398342.43408,"msg":"Started Burrow"}
+{"level":"info","ts":1557398342.434619,"msg":"configuring","type":"coordinator","name":"zookeeper"}
+{"level":"info","ts":1557398342.434735,"msg":"configuring","type":"coordinator","name":"storage"}
+{"level":"info","ts":1557398342.434795,"msg":"configuring","type":"module","coordinator":"storage","class":"inmemory","name":"default"}
+{"level":"info","ts":1557398342.434901,"msg":"configuring","type":"coordinator","name":"evaluator"}
+{"level":"info","ts":1557398342.434932,"msg":"configuring","type":"module","coordinator":"evaluator","class":"caching","name":"default"}
+{"level":"info","ts":1557398342.4349709,"msg":"configuring","type":"coordinator","name":"httpserver"}
+{"level":"info","ts":1557398342.4350562,"msg":"configuring","type":"coordinator","name":"notifier"}
+{"level":"info","ts":1557398342.435074,"msg":"configuring","type":"coordinator","name":"cluster"}
+{"level":"info","ts":1557398342.4350982,"msg":"configuring","type":"module","coordinator":"cluster","class":"kafka","name":"local"}
+{"level":"info","ts":1557398342.435269,"msg":"configuring","type":"coordinator","name":"consumer"}
+{"level":"info","ts":1557398342.435343,"msg":"configuring","type":"module","coordinator":"consumer","class":"kafka","name":"local"}
+{"level":"info","ts":1557398342.4355688,"msg":"starting","type":"coordinator","name":"zookeeper"}
+{"level":"info","ts":1557398343.441302,"msg":"Failed to connect to 10.254.20.12:2181: dial tcp 10.254.20.12:2181: i/o timeout","type":"coordinator","name":"zookeeper"}
+{"level":"info","ts":1557398344.4528809,"msg":"Failed to connect to 10.254.20.10:2181: dial tcp 10.254.20.10:2181: i/o timeout","type":"coordinator","name":"zookeeper"}
+{"level":"info","ts":1557398345.454583,"msg":"Failed to connect to 10.254.20.11:2181: dial tcp 10.254.20.11:2181: i/o timeout","type":"coordinator","name":"zookeeper"}
+{"level":"error","ts":1557398345.454697,"msg":"cannot create root path","type":"coordinator","name":"zookeeper","error":"zk: could not connect to a server"}
