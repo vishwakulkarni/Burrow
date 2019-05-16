@@ -2,8 +2,8 @@
 #this Dockerfile needs to be in folder where Burrow is present 
 #->Burrow
 #->Dockerfile
-FROM golang
-MAINTAINER abhishek.kumar@sap.com
+FROM golang:1.12-alpine
+MAINTAINER vishwanath.kulkarni@sap.com
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -q python-all python-pip 
 RUN apt-get install -y nano iputils-ping telnet curl vim jq 
@@ -16,10 +16,10 @@ RUN echo "deb https://packages.cloudfoundry.org/debian stable main" | tee /etc/a
 RUN apt-get update -y
 RUN apt-get install -y cf-cli
 RUN apt-get install -y net-tools
-ADD ./Burrow /opt/Burrow/
+#ADD ./Burrow /opt/Burrow/
 #ADD ./setup.sh /go/src/setup.sh 
 #RUN chmod u+x /go/src/setup.sh
-ADD ./rootCA.crt /go/src/rootCA.crt
+#ADD ./rootCA.crt /go/src/rootCA.crt
 WORKDIR /go/src
 EXPOSE 5000
 RUN echo $PATH

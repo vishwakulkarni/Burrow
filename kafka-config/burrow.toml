@@ -2,9 +2,14 @@
 pidfile="burrow.pid"
 access-control-allow-origin="*"
 
-[logging]
-filename="logs/burrow.log"
-level="debug"
+#[logging]
+#filename="logs/burrow.log"
+#level="info"
+#maxsize=100
+#maxbackups=30
+#maxage=10
+#use-localtime=false
+#use-compression=true
 
 [client-profile.test]
 client-id="burrow-test"
