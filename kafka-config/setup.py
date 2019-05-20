@@ -15,7 +15,7 @@ data_item = toml.loads(s)
 zk = os.environ['ZK']
 data_item['zookeeper']['servers'] = list(zk1.split(','))
 #set brokers servers
-brokers = os.environ['BROKER']
+brokers = os.environ['BROKERS']
 data_item['cluster']['local']['servers'] = list(brokers.split(','))
 data_item['consumer']['local']['servers'] = list(brokers.split(','))
 #set sasl username and password(actually token)
